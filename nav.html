@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the navbar */
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        /* Style the navigation links */
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff9800;
+        }
+
+        /* Responsive design for mobile devices */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+        }
+
+        .home {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          
+        
+        }
+        .home::before{
+            content: "";
+            background: url('mens_collection.jpg') no-repeat center/cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+            filter: brightness(50%);
+        }
+        h1 {
+            /* WebKit */
+            -webkit-appearance: button !important;
+
+            /* Mozilla */
+            -moz-appearance: button;
+
+            /* Opera */
+            -o-appearance: button;
+
+            /* Internet Explorer */
+            -ms-appearance: button;
+
+            /* CSS3 */
+            appearance: button;
+            width: 400px;
+            padding: 1em;
+            color: #f00;
+        }
+        .home h1 {
+            color: white;
+        }
+
+        .image {
+            z-index: -1;
+            position: fixed;
+            margin-top: 200px;
+
+
+        }
+
+        .hello {
+
+            color: rgb(229, 234, 234);
+            padding: 12px;
+            margin-top: 200px;
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: x-large;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="home">
+        
+        <div class="hello">
+            <h1>hello world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aut consectetur deserunt, totam architecto
+                dolores reprehenderit. Atque, repellat sit, provident quidem dolorum suscipit rerum eveniet sequi, ipsum
+                ad qui earum!</p>
+        </div>
+    </div>
+</body>
+
+</html>
